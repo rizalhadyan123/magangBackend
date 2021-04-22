@@ -3,6 +3,12 @@ const fastify = require("fastify")({ logger: true });
 const path = require("path");
 // Register plugins
 
+fastify.register(require("point-of-view"), {
+  engine: {
+    ejs: require("ejs"),
+  },
+});
+
 fastify.register(require("fastify-static"), {
   root: path.join(__dirname, "/public"),
   prefix: "/", //

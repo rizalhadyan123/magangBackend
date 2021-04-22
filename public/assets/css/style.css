@@ -422,7 +422,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right;
+  background: url("../img/hero-bgbaru.jpg") top right;
   background-size: cover;
 }
 
@@ -449,6 +449,7 @@ h6 {
   color: #6f6f6f;
   margin: 10px 0 0 0;
   font-size: 22px;
+  font-weight: bold;
 }
 
 #hero .btn-about {
@@ -653,7 +654,21 @@ section {
   transition: 0.9s;
   background-color: #34b7a7;
 }
+.skills .skills-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #34b7a7;
+  position: relative;
+}
 
+.skills .skills-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1d685f;
+  margin-bottom: 10px;
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -941,9 +956,12 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin: auto;
+  text-align: center;
 }
-
+.portfolio-container-fluid {
+  display: flex;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
